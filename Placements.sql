@@ -45,3 +45,5 @@ JOIN (SELECT *
         ON f.Friend_ID = Friend_Salary.Friend_ID
 WHERE p.salary < Friend_Salary.salary
 ORDER BY Friend_Salary.salary;
+
+
