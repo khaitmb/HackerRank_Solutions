@@ -1,3 +1,5 @@
+/* SQL Tools Used: Subquerying in JOIN */
+
 /* PLACEMENTS
 You are given three tables: Students, Friends and Packages. Students contains two columns: ID and Name. Friends contains two columns: ID and 
 Friend_ID (ID of the ONLY best friend). Packages contains two columns: ID and Salary (offered salary in $ thousands per month).
@@ -43,5 +45,3 @@ JOIN (SELECT *
         ON f.Friend_ID = Friend_Salary.Friend_ID
 WHERE p.salary < Friend_Salary.salary
 ORDER BY Friend_Salary.salary;
-
-/* SQL Tools Used: Subquerying in JOIN */
