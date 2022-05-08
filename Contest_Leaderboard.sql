@@ -1,3 +1,30 @@
+/* Tools Used: Subquerying in FROM
+
+The total score of a hacker is the sum of their maximum scores for all of the challenges. Write a query to print the hacker_id, name, and 
+total score of the hackers ordered by the descending score. If more than one hacker achieved the same total score, then sort the result by 
+ascending hacker_id. Exclude all hackers with a total score of  from your result.
+ 
+ Hackers
++-----------+---------+
+| Column    | Type    |
++-----------+---------+
+| hacker_id | Integer |
+| name      | String  |
++-----------+---------+
+
+Submissions
++--------------+---------+
+| Column       | Type    |
++--------------+---------+
+| submisson_id | Integer |
+| hacker_id    | Integer |
+| challenge_id | Integer |
+| score        | Integer |
++--------------+---------+
+
+HACKERRANK ACCEPTED SOLUTION:
+*/
+
 SELECT s.hacker_id, h.name, SUM(s.Max_Score) AS Total
 FROM (SELECT s1.hacker_id, MAX(s1.score) AS Max_Score
     FROM Submissions s1
