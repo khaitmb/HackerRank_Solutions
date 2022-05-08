@@ -26,7 +26,6 @@ Submissions
 
 /* HACKER RANK ACCEPTED SOLUTION */
 
-
 SELECT s.hacker_id, h.name, SUM(s.Max_Score) AS Total
 FROM (SELECT s1.hacker_id, MAX(s1.score) AS Max_Score
     FROM Submissions s1
