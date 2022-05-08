@@ -34,3 +34,5 @@ JOIN Hackers h ON s.hacker_id = h.hacker_id
 GROUP BY s.hacker_id, h.name
 HAVING SUM(s.Max_Score) != 0
 ORDER BY Total DESC, s.hacker_id;
+
+
